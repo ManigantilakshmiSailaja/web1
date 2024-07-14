@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <style>
+        nav{
+            background-color:chocolate;
+            display:flex;
+            justify-content:space-evenly;
+            flex-direction:row;
+        }
+        #left{
+            padding:10px;
+            border-radius:50%;
+        }
+        #right{
+                padding-top:70px;
+                border-radius:10px;
+        }
+        .d1{
+            padding:20px;
+            display:flex;
+            justify-content:space-evenly;
+            flex-direction: row;
+        }
+        .div{
+            background-color: aquamarine;
+            height:400px;
+            width:400px;
+            padding:30px;
+        }
+        .div2{
+            background-color: aquamarine;
+            height:400px;
+            width:400px;
+            padding:30px;
+        }
+        .div3{
+            background-color: aquamarine;
+            height:400px;
+            width:400px;
+            padding:30px;
+        }
+
+        }
+
+        }
+     </style>
+</head>
+<body>
+    <nav>
+        <div id="left">
+         <img src="data:image/png;base64,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"/>   
+        </div>
+        <div id="right">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./achivement.html">Achivements</a></li>
+                          <li><a class="dropdown-item" href="./prize.html">prizes</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+          
+        </div>
+    </nav>
+    <div class="d1">
+        <div class="div">
+         <h1>TATA MOTAORS</h1> 
+         <li>Head Office Address</li>  
+         <p>Tata Motors Limited</p>
+         <p>One Indiabulls Center</p>
+         <p>Tower 2A&B,20TH floor</p>
+         <p>841,sentapalli Bapat Marg,</p>
+         <p>Elphines  Road(West)</p>
+         <p>Munbai-400 013</p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg></div>
+          <div class="div2">
+            <h1>TATA GROUPS</h1>
+            <p>mumbai</p>
+            <p>House 24</p>
+            <p>HOMI MODY</p>
+            <p>Street HQ</p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+            </div>
+          <div class="div3">
+            <h3>TATA GROUP</h3>
+            <LI>china</LI>
+            <p>suite 10A</p>
+            <p>tower A</p>
+            <p>Gateway plaza</p>
+            <p>18 XIaguangali</p>
+            <p>East 3rd Ring</p>
+            <p>north Road</p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
